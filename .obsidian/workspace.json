@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "HTML 02 - Pagrindines zymes.md",
+                "file": "03_HTML_Display_Lenteles_Nuorodos_Obsidian.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "HTML 02 - Pagrindines zymes"
+              "title": "03_HTML_Display_Lenteles_Nuorodos_Obsidian"
             }
           }
         ]
@@ -190,8 +190,9 @@
   },
   "active": "69cb507bafc23d01",
   "lastOpenFiles": [
-    "HTML_2_pamoka_.md",
     "HTML 02 - Pagrindines zymes.md",
+    "03_HTML_Display_Lenteles_Nuorodos_Obsidian.md",
+    "HTML_2_pamoka_.md",
     "HTML-CSS 01 - Įvadas.md"
   ]
 }
