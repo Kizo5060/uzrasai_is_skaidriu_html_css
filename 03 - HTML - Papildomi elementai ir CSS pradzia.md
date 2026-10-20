@@ -1,4 +1,11 @@
-# HTML – 2 pamoka: pagrindinės žymės ir CSS pradžia
+---
+tags: [html-css, konspektas]
+---
+
+# HTML – papildomi elementai ir CSS pradžia
+
+> [!info] Apie užrašus
+> Struktūruoti mokymosi užrašai pagal pateiktą paskaitų medžiagą. Sąvokos paaiškintos su pavyzdžiais, kad būtų galima jas pritaikyti HTML ir CSS kode.
 
 > [!info] Apie pamoką
 > Užrašai pagal TECHIN skaidres „Pagrindinės žymės (2 dalis), style 1“ (24 skaidrės). Pavyzdžiai parašyti paprastai, kad būtų galima iškart bandyti `index.html` faile.
@@ -364,34 +371,6 @@ Iki šiol stilius rašėme tiesiog elemente (`style="..."`). **Internal CSS** ra
 
 **Skirtumas:** inline CSS tinka vienam konkrečiam elementui, o internal CSS patogu, kai tą pačią išvaizdą norime pritaikyti keliems elementams viename HTML faile.
 
-## 13. Trumpa atmintinė prieš atsiskaitymą
-
-| Žymė / savybė | Atsimink |
-|---|---|
-| `<img>` | Paveikslėlis; `src`, `alt`, `width`, `height` |
-| `<br>` | Nauja teksto eilutė |
-| `<hr>` | Teminis skirtukas / linija |
-| `<ul>` | Sąrašas su markeriais |
-| `<ol>` | Numeruotas sąrašas |
-| `<li>` | Sąrašo punktas |
-| `<dl>`, `<dt>`, `<dd>` | Terminas ir jo aprašymas |
-| `<div>` | Block konteineris |
-| `<span>` | Inline teksto dalis |
-| `style="..."` | Inline CSS |
-| `color` | Teksto spalva |
-| `background-color` | Fonas |
-| `width`, `height` | Plotis, aukštis |
-| `border` | Rėmelis |
-| `padding` | Tarpas viduje |
-| `margin` | Tarpas išorėje |
-| `font-size` | Šrifto dydis |
-| `font-family` | Šriftas |
-| `font-weight` | Šrifto storis |
-| `text-align` | Lygiavimas |
-| `text-decoration` | Pabraukimas / užbraukimas |
-| `margin collapsing` | Vertikalios paraštės kartais susilieja |
-| `<style>` | Internal CSS, dažniausiai `<head>` viduje |
-
 ## 14. Praktika – pabandyk pats
 
 > [!todo] Užduotis 1 – paveikslėlis ir tekstas
@@ -405,17 +384,3 @@ Iki šiol stilius rašėme tiesiog elemente (`style="..."`). **Internal CSS** ra
 
 > [!todo] Užduotis 4 – internal CSS
 > Perkelk antraštės ir pastraipos spalvas iš `style="..."` į `<style>` bloką `<head>` viduje.
-
-### Klausimai sau
-
-1. Kuo skiriasi `<ul>` ir `<ol>`?
-2. Kam reikalingas `alt` atributas?
-3. Kuo `<div>` skiriasi nuo `<span>`?
-4. Kuo skiriasi `margin` ir `padding`?
-5. Kodėl du vertikalūs margin ne visada susideda?
-6. Kuo skiriasi inline CSS nuo internal CSS?
-7. Kodėl po inline `<img>` sąrašas `<ol>` vis tiek prasideda naujoje eilutėje?
-
----
-
-**Šaltinis:** TECHIN, „Pagrindinės žymės (2 dalis), style 1“, 24 skaidrės. Kai kurie paaiškinimai ir praktinės užduotys papildyti, kad būtų lengviau mokytis.

@@ -1,18 +1,18 @@
 ---
-tags:
-  - html
-  - formos
-  - techin
-  - konspektas
-data: 2026-10-13
+tags: [html-css, konspektas]
 ---
 
-# 04 – HTML formos (išsamus konspektas)
+# HTML – formos
+
+> [!info] Apie užrašus
+> Struktūruoti mokymosi užrašai pagal pateiktą paskaitų medžiagą. Sąvokos paaiškintos su pavyzdžiais, kad būtų galima jas pritaikyti HTML ir CSS kode.
+
+## 04 – HTML formos (išsamus konspektas)
 
 > [!info] Apie pamoką
 > Konspektas pagal TECHIN **„Formos“ (31 skaidrė)**. Prie skaidrių medžiagos pridėti paprasti paaiškinimai, kodas ir užduoties pavyzdys. Pavyzdžius galima įklijuoti į `index.html` ir išbandyti naršyklėje.
 
-## 1. Kam reikalingos HTML formos? (2–4 skaidrės)
+## 1. Kam reikalingos HTML formos?
 
 **Forma** skirta surinkti vartotojo įvestus duomenis, pavyzdžiui, vardą, el. paštą, slaptažodį arba pasirinkimus.
 
@@ -33,7 +33,7 @@ data: 2026-10-13
 
 **Svarbu:** vien HTML forma gali parodyti laukelius ir pateikti užklausą, tačiau be serverio kodo savaime nesukuria paskyros ir neišsaugo duomenų.
 
-## 2. `action` – kur keliauja forma? (5 skaidrė)
+## 2. `action` – kur keliauja forma?
 
 ```html
 <form action="action_page.php">
@@ -48,7 +48,7 @@ data: 2026-10-13
 - `action=""` – pateikiama į dabartinio puslapio adresą.
 - `action="#"` – dažnas mokomasis variantas, bet paspaudus mygtuką forma vis tiek gali būti pateikta ir adresas pasikeisti.
 
-## 3. `autocomplete` – automatinis užpildymas (6 skaidrė)
+## 3. `autocomplete` – automatinis užpildymas
 
 Naršyklė gali pasiūlyti anksčiau įrašytą vardą, paštą ir pan.
 
@@ -62,7 +62,7 @@ Naršyklė gali pasiūlyti anksčiau įrašytą vardą, paštą ir pan.
 - `autocomplete="on"` – leidžiamas automatinis užpildymas.
 - `autocomplete="off"` – prašoma jo nesiūlyti, bet naršyklė kai kuriais atvejais gali nepaisyti.
 
-## 4. `method`: GET ir POST (7–9 skaidrės)
+## 4. `method`: GET ir POST
 
 `method` nusako, **kaip siunčiami** formos duomenys. Jeigu nenurodytas, numatytasis metodas yra `GET`.
 
@@ -145,7 +145,7 @@ Paskutinės kelios eilutės – papildomi HTML5 tipai pasipraktikuoti.
 
 `password` paslepia simbolius ekrane, bet **nėra duomenų šifravimas**.
 
-## 6. `<label>`, `for` ir `id` (11 skaidrė)
+## 6. `<label>`, `for` ir `id`
 
 `label` pasako, **ką reikia įvesti**. Jis susiejamas su laukeliu, kai `for` ir `id` reikšmės vienodos.
 
@@ -159,10 +159,9 @@ Paskutinės kelios eilutės – papildomi HTML5 tipai pasipraktikuoti.
 - `name="pavarde"` – lauko pavadinimas, siunčiamas su forma.
 - Paspaudus ant `label`, naršyklė nukreipia į atitinkamą lauką.
 
-> [!tip] Atsakymas mokytojui
 > `label` yra laukelio užrašas; `for` turi sutapti su to laukelio `id`.
 
-## 7. `radio` – pasirinkti vieną variantą (14 skaidrė)
+## 7. `radio` – pasirinkti vieną variantą
 
 ```html
 <input type="radio" id="vyras" name="lytis" value="vyras">
@@ -183,7 +182,7 @@ Paskutinės kelios eilutės – papildomi HTML5 tipai pasipraktikuoti.
 <input type="radio" name="lytis" value="moteris" checked> Moteris
 ```
 
-## 8. `checkbox` – varnelės (15 skaidrė)
+## 8. `checkbox` – varnelės
 
 ```html
 <input type="checkbox" id="muzika" name="pomėgiai" value="muzika">
@@ -202,7 +201,7 @@ Skirtingai nuo `radio`, **galima pažymėti abu**. Pažymėtų laukų reikšmės
 
 `required` gali reikalauti pažymėti varnelę prieš pateikiant formą.
 
-## 9. `<select>` ir `<option>` (16 skaidrė)
+## 9. `<select>` ir `<option>`
 
 ```html
 <label for="salis">Šalis:</label>
@@ -222,7 +221,7 @@ Skirtingai nuo `radio`, **galima pažymėti abu**. Pažymėtų laukų reikšmės
 <option value="de" selected>Vokietija</option>
 ```
 
-## 10. `<textarea>` – daugiau teksto (17 skaidrė)
+## 10. `<textarea>` – daugiau teksto
 
 ```html
 <label for="zinute">Žinutė:</label>
@@ -231,7 +230,7 @@ Skirtingai nuo `radio`, **galima pažymėti abu**. Pažymėtų laukų reikšmės
 
 Skirtingai nuo paprasto `<input>`, čia galima patogiai rašyti kelias eilutes. `rows` – matomų eilučių skaičius, `cols` – apytikslis plotis simboliais.
 
-## 11. `<datalist>` – pasiūlymai rašant (18 skaidrė)
+## 11. `<datalist>` – pasiūlymai rašant
 
 ```html
 <label for="miestas">Miestas:</label>
@@ -245,7 +244,7 @@ Skirtingai nuo paprasto `<input>`, čia galima patogiai rašyti kelias eilutes. 
 
 Renkantis / rašant naršyklė pasiūlys variantus. **Skirtumas nuo `select`:** paprastame `datalist` gali įrašyti ir kitą reikšmę, kurios sąraše nėra.
 
-## 12. `submit`, `reset` ir paprastas `button` (19 skaidrė)
+## 12. `submit`, `reset` ir paprastas `button`
 
 ```html
 <button type="submit">Siųsti</button>
@@ -264,7 +263,7 @@ Tą patį galima rašyti su `input`:
 <input type="reset" value="Atstatyti">
 ```
 
-## 13. Formos grupavimas (20 skaidrė)
+## 13. Formos grupavimas
 
 ```html
 <fieldset>
@@ -278,7 +277,7 @@ Tą patį galima rašyti su `input`:
 - `<legend>` užrašo grupės pavadinimą.
 - Paprastas `<div>` irgi gali būti naudojamas laukams grupuoti, bet neturi tokios semantinės paskirties.
 
-## 14. `name` ir `value` – labai svarbu! (21–22 skaidrės)
+## 14. `name` ir `value` – labai svarbu!
 
 ```html
 <input type="text" id="vardas3" name="vardas" value="Egle">
@@ -303,7 +302,7 @@ Radio pavyzdys:
 > [!important] Įsiminti
 > **name = pavadinimas, value = reikšmė, id = identifikatorius, label = matomas užrašas.**
 
-## 15. Kiti atributai (23–26 skaidrės)
+## 15. Kiti atributai
 
 | Atributas | Ką daro? | Pavyzdys |
 |---|---|---|
@@ -351,7 +350,7 @@ Reikalauja keturių skaitmenų, jei laukelis užpildytas. Norint reikalauti įve
 
 Leidžiamos reikšmės nuo 18 iki 99.
 
-## 16. Kaip veikia forma nuo pradžios iki galo? (27 skaidrė)
+## 16. Kaip veikia forma nuo pradžios iki galo?
 
 1. Vartotojas atidaro puslapį ir užpildo laukelius.
 2. Paspaudžia `submit`.
@@ -362,7 +361,7 @@ Leidžiamos reikšmės nuo 18 iki 99.
 
 **Pastaba:** laukelis be `name` dažniausiai **nebus įtrauktas į siunčiamus formos duomenis**.
 
-## 17. Duomenų tikrinimas (28 skaidrė)
+## 17. Duomenų tikrinimas
 
 **Client-side validation** – tikrinimas naršyklėje: `required`, `type="email"`, `minlength`, `pattern` ir pan. Padeda greitai pastebėti klaidas.
 
@@ -371,7 +370,7 @@ Leidžiamos reikšmės nuo 18 iki 99.
 > [!warning] Tikrinimas nėra tas pats, kas saugumas
 > `required` ir `pattern` patogūs vartotojui, bet negali pakeisti serverio patikros.
 
-## 18. Tvarkinga forma – pagrindinės taisyklės (29 skaidrė)
+## 18. Tvarkinga forma – pagrindinės taisyklės
 
 - Kiekvienam laukui turėtų būti aiškus `label`.
 - Susiek `for` su atitinkamu `id`.
@@ -488,29 +487,6 @@ Jei `radio` neturi `value`, pasirinkus jį naršyklė paprastai siunčia `on`, o
 <div><label for="v">Vardas:</label> <input id="v" name="v"></div>
 <div><label for="p">Pavardė:</label> <input id="p" name="p"></div>
 ```
-
-## 21. Greita špargalkė prieš atsiskaitymą
-
-| Jei klausia... | Trumpas atsakymas |
-|---|---|
-| Kas yra `form`? | Elementas vartotojo duomenims surinkti ir pateikti. |
-| Kas yra `input`? | Įvedimo / pasirinkimo laukelis. |
-| Kas yra `label`? | Matomas laukelio užrašas. |
-| Kam `for`? | Susieja `label` su tokį `id` turinčiu laukeliu. |
-| Kas yra `id`? | Elemento identifikatorius puslapyje. |
-| Kas yra `name`? | Formos lauko pavadinimas pateikiamuose duomenyse. |
-| Kas yra `value`? | Lauko reikšmė; tekstiniame gali būti pradinė. |
-| Kas yra `placeholder`? | Tik užuomina tuščiame laukelyje. |
-| Kam `checked`? | Pažymi pasirinkimą iš anksto. |
-| Kam `required`? | Laukas būtinas pateikimui. |
-| `radio` ar `checkbox`? | Radio – vienas iš grupės; checkbox – gali būti keli. |
-| `submit`? | Pateikia formą. |
-| `reset`? | Atstato formą į pradinę būseną. |
-| GET? | Duomenys URL parametruose. |
-| POST? | Duomenys HTTP užklausos turinyje. |
-| `action`? | Kur pateikiama forma. |
-| `select`? | Išskleidžiamas sąrašas. |
-| `textarea`? | Kelių eilučių tekstas. |
 
 ## 22. Pasitikrinimas savarankiškai
 

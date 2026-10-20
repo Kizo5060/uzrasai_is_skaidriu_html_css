@@ -1,17 +1,16 @@
 ---
-tags:
-  - css
-  - html
-  - programavimas
-  - pradedantiesiems
-aliases:
-  - CSS selektoriai ir pseudo klasės
+tags: [html-css, konspektas]
 ---
 
-# 02. CSS – atributai, pseudo klasės, pseudo elementai ir specifiškumas
+# CSS – atributai, pseudo klasės, pseudo elementai ir specifiškumas
+
+> [!info] Apie užrašus
+> Struktūruoti mokymosi užrašai pagal pateiktą paskaitų medžiagą. Sąvokos paaiškintos su pavyzdžiais, kad būtų galima jas pritaikyti HTML ir CSS kode.
+
+## CSS – atributai, pseudo klasės, pseudo elementai ir specifiškumas
 
 > [!info] Apie konspektą
-> Užrašai parengti pagal Edgaro Laptevo 34 skaidrių medžiagą „02. CSS“. Paaiškinimai ir papildomi pavyzdžiai pateikti kuo paprasčiau pradedantiesiems. **Pagrindinės paskaitos temos:** selektorių kategorijos, atributų selektoriai, pseudo klasės, pseudo elementai, specifiškumas, `!important`, praktika. **Pastaba:** nors turinyje minimas paveldėjimas, pateiktose skaidrėse jis atskirai nedėstomas, todėl žemiau yra trumpas papildomas paaiškinimas.
+> Užrašai parengti Pagal 34 skaidrių medžiagą „02. CSS“. Paaiškinimai ir papildomi pavyzdžiai pateikti kuo paprasčiau pradedantiesiems. **Pagrindinės paskaitos temos:** selektorių kategorijos, atributų selektoriai, pseudo klasės, pseudo elementai, specifiškumas, `!important`, praktika. **Pastaba:** nors turinyje minimas paveldėjimas, pateiktose skaidrėse jis atskirai nedėstomas, todėl žemiau yra trumpas papildomas paaiškinimas.
 
 ## Turinys
 - [[#1. Kas yra CSS ir selektorius?]]
@@ -26,8 +25,6 @@ aliases:
 - [[#10. Paveldėjimas (papildomai)]]
 - [[#11. Praktinės paskaitos užduotys]]
 - [[#12. Dažniausios klaidos]]
-- [[#13. Atmintinė prieš atsiskaitymą]]
-- [[#14. Pasitikrink save]]
 
 ---
 
@@ -593,7 +590,7 @@ Tekstas bus **raudonas**, nors mėlynas stilius parašytas vėliau.
 
 Paskaitos 29 skaidrėje nurodyta: **kiekvieną užduotį atlikti atskiruose HTML ir CSS failuose** (`01p`, `02p` ir t. t.) ir patikrinti CSS sintaksę [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input).
 
-### 11.1. Pseudo elementai: pridėti žvaigždutę prie sąrašo (30 skaidrė)
+### 11.1. Pseudo elementai: pridėti žvaigždutę prie sąrašo
 
 **Užduotis:** `::before` pagalba prieš „To do“ sąrašo įrašus įterpti simbolį kaip tekstą.
 
@@ -634,7 +631,7 @@ li::before {
 
 **Ką išmokstame:** simbolio HTML nerašome, jis atsiranda per CSS `content`. `list-style: none` panaikina įprastą sąrašo ženklelį.
 
-### 11.2. `nth-child()` ir `hover` (31 skaidrė)
+### 11.2. `nth-child()` ir `hover`
 
 **Užduoties sąlygos:**
 1. Nuo 3-čio elemento, **kas 4-tas** pakeičia spalvą – 3, 7, 11...
@@ -672,7 +669,7 @@ li:nth-child(3n + 2):hover {
 
 **Kodėl?** `4n + 3` duoda 3, 7, 11. `3n + 2` duoda 2, 5, 8, 11. `:hover` įjungia antrą taisyklę tik užvedus pelę. 11-am įrašui galioja abi sąlygos, tačiau kai užvesta pelė, laimi antra taisyklė, nes jos selektorius konkretesnis.
 
-### 11.3. Nuorodų formatavimas (32 skaidrė)
+### 11.3. Nuorodų formatavimas
 
 **Skaidrėje nurodyta:** duotas `indexNuorodos.html`; užduoties žingsniai pateikti paties HTML failo komentare, o CSS turi būti atskirame faile. Skaidrėje matomas vidaus nuorodos ir dviejų išorinių nuorodų vaizdas. **Tikslūs žingsniai nėra pateikti PDF**, todėl be papildomo `indexNuorodos.html` failo jų atkurti negalima.
 
@@ -688,7 +685,7 @@ a[href^="https"] { color: purple; }
 a:hover { text-decoration: underline; }
 ```
 
-### 11.4. Registracijos forma (33 skaidrė)
+### 11.4. Registracijos forma
 
 **Skaidrėje nurodyta:** duoti `index.html`, `style.css`, `rezultatas.png`. CSS komentaruose yra užduoties žingsniai. PDF matomas tik formos rezultatas: vardo, pavardės, naudotojo vardo, el. pašto, slaptažodžio, šalies ir mygtukų laukai. **Be pradinių failų neįmanoma žinoti visų tikslių sąlygų**.
 
@@ -709,7 +706,7 @@ input:invalid { border-color: red; }
 button:hover { background-color: lightpink; }
 ```
 
-### 11.5. Papildoma užduotis – simboliai pagal nuorodos tekstą URL (34 skaidrė)
+### 11.5. Papildoma užduotis – simboliai pagal nuorodos tekstą URL
 
 **Sąlyga:** prieš nuorodas, kurių URL turi `cv`, įterpti **♛**, o po nuorodų, kurių URL turi `darb`, įterpti **♞**. Skaidrėje minima, kad HTML pavyzdys pateiktas atskirame `Pseudo elementai.docx` faile; jo šiame PDF nėra.
 
@@ -745,65 +742,6 @@ a[href*="darb"]::after {
 | `::before` nerodo ženklo | pamirštas `content` | `content: "★";` |
 | `#menu` vietoje `.menu` | sumaišytas ID ir klasė | pagal HTML naudoti `#` arba `.` |
 | `!important` prie kiekvienos savybės | sunku suprasti prioritetus ir taisyti CSS | naudoti tik išimtiniais atvejais |
-
----
-
-## 13. Atmintinė prieš atsiskaitymą
-
-> [!summary] Greitas kartojimas
-> - **CSS selektorius** parenka elementą, kuriam taikomas stilius.
-> - `.klase`, `#id`, `p` – klasė, ID, HTML žymė.
-> - **Atributai:** `[type="email"]`, `^=` prasideda, `$=` baigiasi, `*=` turi tekstą.
-> - **Pseudo klasės `:`:** `:hover`, `:active`, `:focus`, `:checked`, `:invalid`, `:first-child`, `:nth-child()`.
-> - **Pseudo elementai `::`:** `::before`, `::after`, `::first-letter`, `::first-line`, `::placeholder`.
-> - `::before` / `::after` dažniausiai naudojami su `content`.
-> - `:nth-child(2n)` = lyginiai; `:nth-child(2n + 1)` = nelyginiai.
-> - `:nth-child(4n + 3)` = 3, 7, 11...
-> - `:nth-child(3n + 2)` = 2, 5, 8...
-> - `:first-child` skaičiuoja **visus tėvo vaikus**, `:first-of-type` – to paties tipo.
-> - **Specifiškumas:** inline > ID > klasės / atributai / pseudo klasės > žymės / pseudo elementai, kai lyginame vienodos kilmės ir svarbos deklaracijas.
-> - Jei specifiškumas vienodas, paprastai laimi **vėliau parašyta** taisyklė.
-> - `!important` kelia deklaracijos prioritetą, bet geriau juo nepiktnaudžiauti.
-
----
-
-## 14. Pasitikrink save
-
-**1.** Kuo skiriasi `.box` ir `#box`?
-
-**2.** Ką pasirenka `input[type="password"]`?
-
-**3.** Ką reiškia `a[href$=".pdf"]`?
-
-**4.** Kuo skiriasi `button:hover` ir `button:active`?
-
-**5.** Koks skirtumas tarp `p:first-child` ir `p:first-of-type`?
-
-**6.** Kuriuos numerius parinks `li:nth-child(4n + 2)`?
-
-**7.** Ką daro `p::first-letter`?
-
-**8.** Kodėl `li::before { color: red; }` gali nieko neparodyti?
-
-**9.** Kas laimės: `h2 { color: red; }` ar vėliau parašyta `h2 { color: blue; }`?
-
-**10.** Kas konkretesnis: `h2` ar `.title`?
-
-<details>
-<summary>Pasitikrinti atsakymus (išskleisk Obsidian per skaitymo režimą, jei palaikoma)</summary>
-
-1. `.box` ieško klasės, `#box` – ID.
-2. `input`, kurio `type="password"`.
-3. Nuorodas, kurių `href` baigiasi `.pdf`.
-4. `hover` – užvestas žymeklis; `active` – aktyvinamas / spaudžiamas.
-5. `first-child` – pirmas tarp visų tėvo vaikų; `first-of-type` – pirmas to paties žymės tipo.
-6. 2, 6, 10, 14...
-7. Stilizuoja pirmąją elemento teksto raidę.
-8. Trūksta `content` deklaracijos.
-9. Mėlyna, nes vienodo stiprumo taisyklė yra vėliau.
-10. `.title`, nes klasės selektorius turi didesnį specifiškumą.
-
-</details>
 
 ---
 

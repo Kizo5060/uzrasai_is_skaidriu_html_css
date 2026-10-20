@@ -1,15 +1,16 @@
 ---
-tags:
-  - TECHIN
-  - HTML
-  - CSS
-  - selektoriai
-  - konspektas
+tags: [html-css, konspektas]
 ---
-# 05. CSS sintaksė ir selektoriai
+
+# CSS – sintaksė ir pagrindiniai selektoriai
+
+> [!info] Apie užrašus
+> Struktūruoti mokymosi užrašai pagal pateiktą paskaitų medžiagą. Sąvokos paaiškintos su pavyzdžiais, kad būtų galima jas pritaikyti HTML ir CSS kode.
+
+## CSS sintaksė ir selektoriai
 
 > [!info] Apie šiuos užrašus
-> Konspektas paruoštas pagal TECHIN **„CSS Sintaksė ir Selektoriai“ (45 skaidrės)** ir papildomą **„Selectors Cheat Sheet“ (3 puslapiai, Web Dev Simplified)**. Pagrindinė pamoka paaiškinta iš eilės, o špargalkės temos sudėtos atskirame skyriuje. Paaiškinimai ir kodų pavyzdžiai pateikti paprastai, kad galėčiau pats pasitikrinti, ką reiškia kiekvienas selektorius.
+> Konspektas paruoštas pagal TECHIN **„CSS Sintaksė ir Selektoriai“ (45 skaidrės)** ir papildomą **„Selectors Cheat Sheet“ (3 puslapiai, Web Dev Simplified)**. Pagrindinė pamoka paaiškinta iš eilės, o atmintinės temos sudėtos atskirame skyriuje. Paaiškinimai ir kodų pavyzdžiai pateikti paprastai, kad galėčiau pats pasitikrinti, ką reiškia kiekvienas selektorius.
 
 ## Turinys
 - [[#1. Kas yra CSS?]]
@@ -28,8 +29,6 @@ tags:
 - [[#14. CSS komentarai ir validatorius]]
 - [[#15. Kas yra Selectors Cheat Sheet?]]
 - [[#16. Pilnas mažas praktinis pavyzdys]]
-- [[#17. Mokytojo pasitikrinimo užduotys]]
-- [[#18. Trumpa špargalkė]]
 
 ---
 ## 1. Kas yra CSS?
@@ -386,7 +385,7 @@ Vienas elementas gali turėti **kelias klases**:
 
 ## 8. Atributų selektoriai
 
-**Ši tema išsamiau parodyta papildomoje Selectors Cheat Sheet špargalkėje.**
+**Ši tema išsamiau parodyta papildomoje Selectors Cheat Sheet atmintinėje.**
 
 | Selektorius | Reikšmė |
 |---|---|
@@ -599,11 +598,11 @@ Tai ne HTML komentaras `<!-- ... -->` ir ne JavaScript `//` komentaras.
 - Patikrinti CSS per validatoriaus puslapį.
 - Vienoje užduotyje naujus stilius rašyti į **kitą CSS failą**, neliečiant pradinio.
 
-Pamokos pabaigoje pateikta nuoroda į Emmet: https://docs.emmet.io/cheat-sheet/ (tai **kodo rašymo trumpinių** špargalkė, o ne CSS selektorių sąrašas).
+Pamokos pabaigoje pateikta nuoroda į Emmet: https://docs.emmet.io/cheat-sheet/ (tai **kodo rašymo trumpinių** atmintinė, o ne CSS selektorių sąrašas).
 
 ## 15. Kas yra Selectors Cheat Sheet?
 
-**Cheat Sheet** reiškia **špargalkę / trumpą atmintinę**. Mokytojas pridėjo 3 puslapių PDF iš „Web Dev Simplified“, kad turėtum **vienoje vietoje CSS selektorių simbolius ir jų reikšmes**. Jo nereikia suprasti kaip naujos programavimo kalbos ar atskiros užduoties. Tai pagalbinė lentelė mokantis CSS.
+**Cheat Sheet** reiškia **špargalkę / trumpą atmintinę**. Medžiagoje pateikta 3 puslapių PDF iš „Web Dev Simplified“, kad turėtum **vienoje vietoje CSS selektorių simbolius ir jų reikšmes**. Jo nereikia suprasti kaip naujos programavimo kalbos ar atskiros užduoties. Tai pagalbinė lentelė mokantis CSS.
 
 ### Ką rodo jo trys puslapiai?
 
@@ -636,7 +635,6 @@ PDF dešinėje esantys **mėlyni pažymėti langeliai** parodo, **kuriems HTML e
 > [!example] Pavyzdys
 > Jei pamatysi `div > a`, žiūrėk į schemą: bus pasirinktos tik tos nuorodos, kurios yra tiesioginiai `div` vaikai, o ne nuorodos giliau įdėtame elemente.
 
-**Ką mokytis pirmiausia?** `p`, `.class`, `#id`, `*`, `article p`, `article > p`, `article + p`, `article ~ p`, `h2, h3`. Tada eik prie `[type="text"]`, `:hover`, `:checked`, `:nth-child` ir likusių. Tai mokymosi patarimas, ne papildomas mokytojo reikalavimas.
 
 ## 16. Pilnas mažas praktinis pavyzdys
 
@@ -704,81 +702,3 @@ PDF dešinėje esantys **mėlyni pažymėti langeliai** parodo, **kuriems HTML e
 4. `.kortele p` – visos pastraipos kortelės viduje turi 18px šriftą.
 5. `input[required]` – tik privalomas įvedimo laukelis žaliu rėmeliu.
 6. `button:hover` – pasikeičia mygtuko fonas užvedus pelę.
-
-## 17. Mokytojo pasitikrinimo užduotys
-
-### #1 Kuris CSS rašymo būdas dažniausiai turi didžiausią prioritetą?
-
-**Atsakymas:** `style="..."` (inline), lyginant su įprastomis tokios pat savybės taisyklėmis.
-
-### #2 Kokia bus antraštės spalva?
-
-```html
-<style>
-    h1 { color: blue; }
-</style>
-<h1 style="color: red;">Labas</h1>
-```
-
-**Atsakymas:** raudona, nes yra inline `style="color: red"`.
-
-### #3 Kas bus žalia?
-
-```html
-<h2>Nr. 258</h2>
-<h3>Nr. 147</h3>
-<h4>Nr. 009</h4>
-<div><p>Nr. 587</p></div>
-<p>Nr. 621</p>
-```
-
-```css
-h3, p { color: green; }
-```
-
-**Atsakymas:** `h3` Nr. 147 ir abi `p` pastraipos Nr. 587, Nr. 621. `h2` ir `h4` nepasirenkami.
-
-### #4 Kurios pastraipos bus mėlynos?
-
-```html
-<main>
-    <div><p>Nr. 444</p></div>
-    <p>Nr. 003</p>
-</main>
-```
-
-```css
-main p { color: blue; }
-```
-
-**Atsakymas:** abi. Nes `main p` reiškia visus `p` palikuonis `main` viduje, net jei tarp jų yra `div`.
-
-## 18. Trumpa špargalkė
-
-| Žymėjimas | Vienu sakiniu |
-|---|---|
-| `p` | Visi `p` |
-| `.melynas` | Visi su klase `melynas` |
-| `#virsus` | Elementas su ID `virsus` |
-| `*` | Visi elementai |
-| `h2, h3` | Abu elementų tipai |
-| `div p` | Visi `p` `div` viduje |
-| `div > p` | Tiesioginiai `p` vaikai |
-| `div + p` | Pirmas `p` iškart po `div` |
-| `div ~ p` | Visi vėlesni broliniai `p` |
-| `div.kortele` | `div` su klase `kortele` |
-| `input[type="text"]` | Tekstiniai `input` laukeliai |
-| `button:hover` | Užvesta pelė ant mygtuko |
-| `input:checked` | Pažymėtas pasirinkimas |
-| `li:first-child` | Pirmasis `li`, jei jis pirmas tėvo vaikas |
-| `tr:nth-child(even)` | Lyginio numerio eilutės |
-| `p::before` | Įterpiamas turinys prieš `p` turinį |
-
-> [!success] Svarbiausia įsidėmėti
-> Selektorius atsako į klausimą **„kurį elementą keičiu?“**, o savybė su reikšme – **„ką ir kaip keičiu?“**.
-
----
-### Šaltiniai
-- TECHIN – *CSS Sintaksė ir Selektoriai.pdf*, 45 skaidrės.
-- Web Dev Simplified – *Selectors Cheat Sheet.pdf*, 3 puslapiai.
-

@@ -1,10 +1,17 @@
-# HTML – pagrindinės žymės ir struktūra
+---
+tags: [html-css, konspektas]
+---
+
+# HTML – dokumento struktūra ir pagrindinės žymės
+
+> [!info] Apie užrašus
+> Struktūruoti mokymosi užrašai pagal pateiktą paskaitų medžiagą. Sąvokos paaiškintos su pavyzdžiais, kad būtų galima jas pritaikyti HTML ir CSS kode.
 
 > Konspektas pagal TECHIN skaidres. Skirtas Obsidian ir greitam pasikartojimui.
 
 ---
 
-# 1. Kas yra HTML?
+## Kas yra HTML?
 
 **HTML** = **Hyper Text Markup Language**  
 Lietuviškai: **hiperteksto žymėjimo kalba**.
@@ -20,7 +27,7 @@ HTML nurodo naršyklei **ką rodyti**, bet ne „kaip veikia programos logika“
 
 ---
 
-# 2. Kas yra hipertekstas?
+## Kas yra hipertekstas?
 
 **Hipertekstas** – tekstas, kuriame yra nuorodų (hipersaitų), vedančių į:
 - kitą tekstą;
@@ -35,7 +42,7 @@ Skirtumas nuo knygos:
 
 ---
 
-# 3. HTML dokumentas
+## HTML dokumentas
 
 HTML failo plėtinys:
 
@@ -65,7 +72,7 @@ Galima galvoti kaip apie svetainės **„namų duris“**.
 
 ---
 
-# 4. HTML žymės
+## HTML žymės
 
 HTML sudarytas iš **žymių (tags)**.
 
@@ -106,7 +113,7 @@ Tačiau rekomenduojama rašyti **mažosiomis raidėmis**:
 
 ---
 
-# 5. `<!DOCTYPE html>`
+## `<!DOCTYPE html>`
 
 Kiekvieno HTML dokumento pradžioje rašoma:
 
@@ -121,7 +128,7 @@ Tai:
 
 ---
 
-# 6. HTML5 dokumento struktūra
+## HTML5 dokumento struktūra
 
 Bazinis HTML dokumentas:
 
@@ -192,7 +199,7 @@ Pavadinimas:
 
 ---
 
-# 7. Meta žymės
+## Meta žymės
 
 Meta žymės rašomos tarp:
 
@@ -256,7 +263,7 @@ Nurodo puslapio autorių.
 
 ---
 
-# 8. HTML elemento konstrukcija
+## HTML elemento konstrukcija
 
 Paprastas elementas:
 
@@ -278,7 +285,7 @@ Pvz.:
 
 ---
 
-# 9. Atributai
+## Atributai
 
 **Atributas** – papildoma informacija apie HTML žymę.
 
@@ -298,7 +305,7 @@ Pvz.:
 
 ---
 
-# 10. Tuščios žymės
+## Tuščios žymės
 
 Ne visos HTML žymės turi uždarymo žymę.
 
@@ -322,7 +329,7 @@ Joms nereikia:
 
 ---
 
-# 11. Pagrindinės HTML žymės
+## Pagrindinės HTML žymės
 
 ## Antraštė
 
@@ -395,7 +402,7 @@ Vizualiai atskiria turinio dalis.
 
 ---
 
-# 12. Pastraipos `<p>`
+## Pastraipos `<p>`
 
 ```html
 <p>Čia yra pastraipa.</p>
@@ -409,7 +416,7 @@ Pastraipos:
 
 ---
 
-# 13. Antraštės `<h1>` – `<h6>`
+## Antraštės `<h1>` – `<h6>`
 
 HTML turi 6 antraščių lygius:
 
@@ -429,7 +436,7 @@ Svarbu puslapio struktūrai, prieinamumui ir SEO.
 
 ---
 
-# 14. SEO
+## SEO
 
 **SEO = Search Engine Optimization**
 
@@ -447,7 +454,7 @@ SEO padeda:
 
 ---
 
-# 15. Whitespace collapsing
+## Whitespace collapsing
 
 HTML turi taisyklę:
 
@@ -469,7 +476,7 @@ Labas pasauli
 
 ---
 
-# 16. Paveikslėliai `<img>`
+## Paveikslėliai `<img>`
 
 Pagrindinė forma:
 
@@ -491,7 +498,7 @@ Paveikslėlis iš interneto:
 
 ---
 
-# 17. Pagrindiniai `<img>` atributai
+## Pagrindiniai `<img>` atributai
 
 ## `src`
 
@@ -548,7 +555,7 @@ Tekstas, rodomas užvedus pelę:
 
 ---
 
-# 18. Paveikslėlių failų pavadinimai
+## Paveikslėlių failų pavadinimai
 
 Paieškos sistemos gali skaityti ir paveikslėlių failų pavadinimus.
 
@@ -568,7 +575,7 @@ Failo pavadinimas turėtų būti aiškus ir prasmingas.
 
 ---
 
-# 19. Sąrašai
+## Sąrašai
 
 ## Neužsakytas sąrašas `<ul>`
 
@@ -620,7 +627,7 @@ Tai yra **nesting** – elementų įdėjimas vieno į kitą.
 
 ---
 
-# 20. Teksto formatavimo žymės
+## Teksto formatavimo žymės
 
 ## `<b>`
 
@@ -736,7 +743,7 @@ Pabrauktas tekstas:
 
 ---
 
-# 21. Block-level ir inline elementai
+## Block-level ir inline elementai
 
 ## Block-level
 
@@ -775,7 +782,7 @@ Pvz.:
 
 ---
 
-# 22. Parent ir Child
+## Parent ir Child
 
 **Parent elementas** – elementas, kurio viduje yra kitas elementas.
 
@@ -801,7 +808,7 @@ Parent > Child
 
 ---
 
-# 23. Specialieji simboliai
+## Specialieji simboliai
 
 HTML specialieji simboliai gali būti rašomi naudojant **HTML entities**.
 
@@ -831,7 +838,7 @@ Visi gali parodyti:
 
 ---
 
-# 24. HTML komentarai
+## HTML komentarai
 
 Komentarai naršyklėje nerodomi.
 
@@ -853,7 +860,7 @@ Galima laikinai „išjungti“ kodą:
 
 ---
 
-# 25. Live Server
+## Live Server
 
 **Live Server** – VS Code plėtinys, leidžiantis:
 - paleisti HTML puslapį;
@@ -869,7 +876,7 @@ Diegimas:
 
 ---
 
-# 26. Kodo formatavimas
+## Kodo formatavimas
 
 Svarbu naudoti:
 - įtraukas;
@@ -888,38 +895,7 @@ Taip pat galima naudoti:
 
 ---
 
-# Greita špargalkė
-
-```html
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mano puslapis</title>
-</head>
-<body>
-
-    <h1>Pagrindinė antraštė</h1>
-
-    <p>Čia yra pastraipa.</p>
-
-    <a href="https://example.com">Nuoroda</a>
-
-    <img src="img/foto.jpg" alt="Nuotraukos aprašymas">
-
-    <ul>
-        <li>Vienas</li>
-        <li>Du</li>
-    </ul>
-
-</body>
-</html>
-```
-
----
-
-# Labai svarbu atsiminti
+## Labai svarbu atsiminti
 
 - HTML = **struktūra ir turinys**
 - HTML nėra programavimo kalba

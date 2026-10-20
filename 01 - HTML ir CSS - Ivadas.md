@@ -1,4 +1,11 @@
-# HTML ir CSS – Įvadas
+---
+tags: [html-css, konspektas]
+---
+
+# HTML ir CSS – įvadas
+
+> [!info] Apie užrašus
+> Struktūruoti mokymosi užrašai pagal pateiktą paskaitų medžiagą. Sąvokos paaiškintos su pavyzdžiais, kad būtų galima jas pritaikyti HTML ir CSS kode.
 
 ## Tinklapių kūrimas
 
@@ -11,7 +18,7 @@ Jos naudojamos kartu, tačiau daro skirtingus dalykus.
 
 ---
 
-# HTML
+## HTML
 
 **HTML** – naudojamas tinklapio **struktūrai ir turiniui** sukurti.
 
@@ -48,7 +55,7 @@ HTML pagrindinė paskirtis – sudėti puslapio **turinį ir struktūrą**.
 
 ---
 
-# CSS
+## CSS
 
 **CSS** – naudojamas kontroliuoti tinklapio **vizualinę išvaizdą**.
 
@@ -83,7 +90,7 @@ Tai reiškia, kad visi `h1` elementai bus raudonos spalvos.
 
 ---
 
-# HTML ir CSS skirtumas
+## HTML ir CSS skirtumas
 
 | HTML | CSS |
 |---|---|
@@ -102,7 +109,7 @@ Galima įsivaizduoti taip:
 
 ---
 
-# Ko reikia tinklapių kūrimui?
+## Ko reikia tinklapių kūrimui?
 
 ## 1. Naršyklės
 
@@ -149,8 +156,6 @@ VS Code naudosime HTML ir CSS kodui rašyti.
 
 ---
 
-# Kaip vyksta mokymasis?
-
 ## Teorija
 
 Pirmiausia aiškinamės:
@@ -164,7 +169,6 @@ Pirmiausia aiškinamės:
 
 ## Live Coding
 
-**Live Coding** – kai dėstytojas gyvai rašo kodą ir tuo pačiu aiškina, ką daro.
 
 Svarbu ne tik nukopijuoti kodą, bet suprasti:
 
@@ -190,43 +194,7 @@ Tikrinama:
 
 ---
 
-# Atsiskaitymas
-
-Atsiskaitymas susideda iš **dviejų dalių**.
-
-## 1 dalis – teorijos testas
-
-- **30 klausimų**
-- laikas – iki **35 minučių**
-- atliekama per **MOODLE / mokymas.lt**
-
-Klausimai gali būti kelių tipų.
-
-### 4 atsakymų variantai
-
-Iš 4 pateiktų atsakymų:
-
-**1 yra teisingas.**
-
-### 6 atsakymų variantai
-
-Iš 6 pateiktų atsakymų:
-
-**2 yra teisingi.**
-
-Testo metu gali būti klausimų apie:
-
-- sąvokas;
-- terminus;
-- HTML;
-- CSS;
-- kodo supratimą;
-- ką konkretus kodas daro;
-- kuris kodo variantas teisingas.
-
----
-
-# 2 dalis – praktinė užduotis
+## 2 dalis – praktinė užduotis
 
 Praktinei daliai skiriama iki:
 
@@ -242,7 +210,7 @@ arba
 
 ---
 
-# Responsive
+## Responsive
 
 **Responsive** reiškia, kad tinklapis turi prisitaikyti prie skirtingo ekrano dydžio.
 
@@ -254,19 +222,7 @@ Pvz.:
 
 ---
 
-# MOODLE
-
-Atsiskaitymo teorijos dalis atliekama per MOODLE.
-
-Studentai jungiasi naudodami:
-
-**TECHIN paskyrą.**
-
-Prisijungimas prie MOODLE turi būti pateiktas prieš atsiskaitymą.
-
----
-
-# Naudingi mokymosi puslapiai
+## Naudingi mokymosi puslapiai
 
 - W3Schools
 - SoloLearn
@@ -277,58 +233,7 @@ Prisijungimas prie MOODLE turi būti pateiktas prieš atsiskaitymą.
 
 ---
 
-# Greita špargalkė
-
-## HTML
-
-**HTML = struktūra + turinys**
-
-```html
-<h1>Antraštė</h1>
-<p>Pastraipa</p>
-```
-
-## CSS
-
-**CSS = išvaizda**
-
-```css
-h1 {
-    color: red;
-}
-```
-
-## Ko reikia darbui?
-
-- VS Code
-- naršyklė
-- HTML failas
-- CSS failas
-
-## Atsiskaitymas
-
-### Teorija
-
-- 30 klausimų
-- iki 35 min.
-- MOODLE
-- terminai
-- sąvokos
-- kodo supratimas
-
-### Praktika
-
-- iki 3 val.
-- užduotys arba projektas
-- HTML
-- CSS
-- dizaino atkartojimas
-- responsive
-- kodo kokybė
-
----
-
-# Svarbiausia atsiminti
+## Svarbiausia atsiminti
 
 > **HTML pasako, KAS yra puslapyje.**
 

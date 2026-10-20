@@ -1,4 +1,11 @@
+---
+tags: [html-css, konspektas]
+---
 
+# HTML – display, lentelės ir nuorodos
+
+> [!info] Apie užrašus
+> Struktūruoti mokymosi užrašai pagal pateiktą paskaitų medžiagą. Sąvokos paaiškintos su pavyzdžiais, kad būtų galima jas pritaikyti HTML ir CSS kode.
 
 > [!info] Pamokos konspektas
 > TECHIN. Išsamūs užrašai pagal skaidres su paprastais pavyzdžiais ir dažniausiomis klaidomis. Tinka kartojimui ir praktinėms užduotims.
@@ -438,42 +445,3 @@ Atkreipk dėmesį: nuorodos skiriasi priklausomai nuo **kurio failo** jas rašom
     <li>Paleisti naršyklėje</li>
 </ol>
 ```
-
-## 9. Ką verta mokėti per atsiskaitymą?
-
-- [ ] Paaiškinti, kas yra numatytieji naršyklės stiliai.
-- [ ] Atskirti `block`, `inline`, `inline-block`.
-- [ ] Žinoti, ką daro `width`, `height`, `margin`, `padding`.
-- [ ] Parašyti lentelę su `<table>`, `<tr>`, `<th>`, `<td>`.
-- [ ] Pritaikyti `colspan` ir `rowspan`.
-- [ ] Pridėti `<caption>`.
-- [ ] Sujungti lentelės rėmelius per `border-collapse`.
-- [ ] Padaryti nuorodą su `<a href="...">`.
-- [ ] Suprasti skirtumą tarp `../`, `../../`, `pages/failas.html`.
-- [ ] Įkelti nuotrauką su `<img src="..." alt="...">`.
-- [ ] Paaiškinti absoliutaus ir santykinio URL skirtumą.
-
-## 10. Mini špargalkė
-
-| Jei reikia... | Rašyk |
-|---|---|
-| Nuorodos | `<a href="kitas.html">Eiti</a>` |
-| Nuotraukos | `<img src="foto.png" alt="Foto">` |
-| Vienu aplanku aukštyn | `../` |
-| Dviem aplankais aukštyn | `../../` |
-| Failo vidiniame aplanke | `pages/datos.html` |
-| Lentelės | `<table>` |
-| Lentelės eilutės | `<tr>` |
-| Lentelės antraštės | `<th>` |
-| Lentelės duomenų | `<td>` |
-| Stulpelių sujungimo | `colspan="2"` |
-| Eilučių sujungimo | `rowspan="2"` |
-| Lentelės pavadinimo | `<caption>` |
-| Elementų vienoje eilėje su pločiu | `display: inline-block;` |
-| Sujungti rėmelius | `border-collapse: collapse;` |
-| Vidinio tarpo | `padding` |
-| Išorinio tarpo | `margin` |
-
----
-
-**Svarbiausia mintis:** HTML nusako, **kas yra puslapyje**, o CSS – **kaip tai atrodo ir išsidėsto**. Failų keliai priklauso nuo to, **kuriame aplanke yra dabar atidarytas HTML failas**.
