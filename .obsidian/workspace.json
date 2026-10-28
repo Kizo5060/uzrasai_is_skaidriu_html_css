@@ -55,12 +55,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "13 – HTML alt object-fit  CSS pavadinimai ir semantika.md",
+                "file": "14-CSS Flexbox – nuo nulio iki praktikos.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "13 – HTML alt object-fit  CSS pavadinimai ir semantika"
+              "title": "14-CSS Flexbox – nuo nulio iki praktikos"
             }
           }
         ],
@@ -231,10 +231,11 @@
       "bases:Create new base": false
     }
   },
-  "active": "62a076ff5a08a5c1",
+  "active": "befdcfe5d8dfe181",
   "lastOpenFiles": [
-    "11 - CSS - Fonas, CSS Reset ir BEM.md",
     "13 – HTML alt object-fit  CSS pavadinimai ir semantika.md",
+    "14-CSS Flexbox – nuo nulio iki praktikos.md",
+    "11 - CSS - Fonas, CSS Reset ir BEM.md",
     "12-CSS – Display, Position, Z-index ir Transform.md",
     "09 - CSS - Sriftai ir ikoneles.md",
     "10 - CSS - Dezutes modelis matavimo vienetai ir spalvos.md",
