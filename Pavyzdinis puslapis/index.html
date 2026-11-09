@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Lorem Studio – demonstracinis HTML, CSS ir JavaScript projektas">
+  <title>Lorem Studio | DRY + Fake API</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header" id="top">
+    <nav class="container navbar" aria-label="Pagrindinė navigacija">
+      <a class="brand" href="#home"><span aria-hidden="true">✦</span> Lorem<span>Studio</span></a>
+      <button class="nav-toggle" id="navToggle" type="button" aria-controls="navLinks" aria-expanded="false" aria-label="Atidaryti meniu">☰</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a class="nav-contact" href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-layout">
+        <div class="hero-copy">
+          <p class="eyebrow">✦ Lorem ipsum dolor sit amet</p>
+          <h1>Lorem ipsum dolor <span>sit amet consectetur.</span></h1>
+          <p class="hero-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vulputate elit sit amet nisi vestibulum, vel tempus lectus aliquet.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#services">Explore services ↗</a>
+            <a class="button button-outline" href="#about">Learn more</a>
+          </div>
+        </div>
+        <aside class="hero-stat" aria-label="Demonstraciniai duomenys">
+          <span class="stat-symbol" aria-hidden="true">↗</span>
+          <strong>98%</strong>
+          <span>Lorem ipsum dolor</span>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section services-section" id="services">
+      <div class="container">
+        <p class="section-label">LOREM IPSUM</p>
+        <div class="section-heading">
+          <h2>Lorem ipsum dolor sit amet</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent euismod nibh sed urna pretium.</p>
+        </div>
+        <div class="service-grid">
+          <article class="service-card">
+            <span class="service-icon" aria-hidden="true">◈</span>
+            <h3>Lorem ipsum</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nec risus nec urna suscipit.</p>
+            <a href="#contact">Read more →</a>
+          </article>
+          <article class="service-card">
+            <span class="service-icon" aria-hidden="true">⌘</span>
+            <h3>Dolor sit amet</h3>
+            <p>Nullam dictum tortor at lectus facilisis, eget elementum sem vulputate. Aliquam erat volutpat.</p>
+            <a href="#contact">Read more →</a>
+          </article>
+          <article class="service-card">
+            <span class="service-icon" aria-hidden="true">✧</span>
+            <h3>Consectetur elit</h3>
+            <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.</p>
+            <a href="#contact">Read more →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-section" id="about">
+      <div class="container about-layout">
+        <div>
+          <p class="section-label light">ABOUT LOREM</p>
+          <h2>Lorem ipsum dolor sit amet consectetur.</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed cursus, nisi nec commodo posuere, mauris mauris fermentum erat, sed porttitor sapien magna at libero.</p>
+        </div>
+        <div class="metrics">
+          <div><strong>120+</strong><span>Lorem ipsum</span></div>
+          <div><strong>8+</strong><span>Dolor sit amet</span></div>
+          <div><strong>24/7</strong><span>Consectetur</span></div>
+          <div><strong>98%</strong><span>Adipiscing elit</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reviews-section" id="reviews">
+      <div class="container">
+        <p class="section-label">FAKE API REVIEWS</p>
+        <div class="section-heading">
+          <h2>Lorem ipsum reviews</h2>
+          <p>Lorem ipsum dolor sit amet. Random comment from JSONPlaceholder demo API.</p>
+        </div>
+        <article class="review-card" id="reviewCard" aria-live="polite" aria-busy="true">
+          <span class="quote-symbol" aria-hidden="true">“</span>
+          <p class="review-text" id="reviewText">Loading review...</p>
+          <div class="review-bottom">
+            <div class="review-person">
+              <span class="review-avatar" aria-hidden="true">✦</span>
+              <div>
+                <strong id="reviewName">Loading...</strong>
+                <span id="reviewDetails">Fake API data</span>
+              </div>
+            </div>
+            <button class="button button-small" id="reloadReview" type="button">Next review ↻</button>
+          </div>
+        </article>
+        <p class="api-note">Demo comments: <a href="https://jsonplaceholder.typicode.com/" target="_blank" rel="noopener noreferrer">JSONPlaceholder</a>. These are test data, not real customer reviews.</p>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div class="container contact-content">
+        <div>
+          <p class="section-label light">CONTACT</p>
+          <h2>Lorem ipsum dolor sit amet?</h2>
+        </div>
+        <a class="button button-primary" href="mailto:hello@example.com">Lorem ipsum ↗</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2026 Lorem Studio. Demo project.</p>
+      <a href="#top">Back to top ↑</a>
+    </div>
+  </footer>
+</body>
+</html>

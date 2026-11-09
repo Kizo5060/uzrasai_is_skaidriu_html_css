@@ -53,14 +53,12 @@
             "id": "befdcfe5d8dfe181",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "14-CSS Flexbox – nuo nulio iki praktikos.md",
-                "mode": "source",
-                "source": false
+                "file": "Medžiaga/Atsiskaitymas HTML-CSS.pdf"
               },
-              "icon": "lucide-file",
-              "title": "14-CSS Flexbox – nuo nulio iki praktikos"
+              "icon": "lucide-file-text",
+              "title": "Atsiskaitymas HTML-CSS"
             }
           }
         ],
@@ -233,30 +231,39 @@
   },
   "active": "befdcfe5d8dfe181",
   "lastOpenFiles": [
-    "13 – HTML alt object-fit  CSS pavadinimai ir semantika.md",
+    "05 - DRY ir tvarkingas CSS.md",
+    "04 - HTML - Display lenteles ir nuorodos.md",
+    "04 - Flex Grid ir responsive.md",
+    "03 - CSS pagrindai.md",
+    "02 - HTML struktūra ir semantika.md",
+    "02 - HTML - Dokumento struktura ir pagrindines zymes.md",
+    "01 - HTML ir CSS - Ivadas.md",
     "14-CSS Flexbox – nuo nulio iki praktikos.md",
+    "09 - Sąvokos ir trumpi atsakymai.md",
+    "08 - Fake API atsiliepimai (papildomai).md",
+    "07 - Dažnos klaidos ir pasitikrinimas.md",
+    "06 - Praktinio darbo planas.md",
+    "01 - Atsiskaitymo eiga ir taisyklės.md",
+    "00 - Pradžia.md",
+    "Pavyzdinis puslapis/style.css",
+    "Pavyzdinis puslapis/script.js",
+    "Pavyzdinis puslapis/index.html",
+    "Pavyzdinis puslapis",
+    "Medžiaga/Atsiskaitymas HTML-CSS.pdf",
+    "Medžiaga",
+    "Untitled",
+    "13 – HTML alt object-fit  CSS pavadinimai ir semantika.md",
     "11 - CSS - Fonas, CSS Reset ir BEM.md",
     "12-CSS – Display, Position, Z-index ir Transform.md",
     "09 - CSS - Sriftai ir ikoneles.md",
     "10 - CSS - Dezutes modelis matavimo vienetai ir spalvos.md",
     "08 - CSS - Paveldejimas ir kaskada.md",
     "06 - CSS - Sintakse ir pagrindiniai selektoriai.md",
-    "04 - HTML - Display lenteles ir nuorodos.md",
-    "01 - HTML ir CSS - Ivadas.md",
     "07 - CSS - Atributai pseudo klases ir specifiskumas.md",
     "05 - HTML - Formos.md",
     "03 - HTML - Papildomi elementai ir CSS pradzia.md",
-    "02 - HTML - Dokumento struktura ir pagrindines zymes.md",
     "00 - TURINYS.md",
     "02_Sriftai_ir_ikoneles.md",
-    "uzrasai_is_skaidriu_html_css.zip",
-    "01_CSS_paveldejimas_ir_kaskada.md",
-    "05_CSS_Sintakse_Selektoriai_Obsidian.md",
-    "HTML-CSS 01 - Įvadas.md",
-    "HTML_2_pamoka_.md",
-    "06 css.md",
-    "04_HTML_Formos_Obsidian.md",
-    "03_HTML_Display_Lenteles_Nuorodos_Obsidian.md",
-    "HTML 02 - Pagrindines zymes.md"
+    "uzrasai_is_skaidriu_html_css.zip"
   ]
 }
